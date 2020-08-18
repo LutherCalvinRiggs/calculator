@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Google Analytics -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Luther Calvin Riggs">
+        <title>Title</title>
+        
+        <!-- Tiles need transparent background -->
+        <meta name="msapplication-TileImage" content="images/tiles/name-tile-70x70.png">    
+        <meta name="msapplication-TileImage" content="images/tiles/name-tile-150x150.png">    
+        <meta name="msapplication-TileImage" content="images/tiles/name-tile-310x150.png">    
+        <meta name="msapplication-TileImage" content="images/tiles/name-tile-310-310.png">    
+        <meta name="msapplication-TileColor" content="#000000">     <!-- Only hex format -->
+        <meta name="application-name" content="">   <!-- Name when saved to home screen -->
+
+        <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <!-- Google Fonts -->
+        <!-- Number output -->
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+        <!-- Function Indicator output -->
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+        <!-- Keypad -->
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Open+Sans&display=swap" rel="stylesheet">
+
+        <script src="/scripts/main.js" type="application/javascript"></script>
+
+    </head>
+
+    <body>
+
+            <main id='background' role='calculator' aria-label='calculator'>
+                <div id='calculator-body'>
+                    <div id='screen'>
+                        <div id='function-indicators-bar'>
+                            <div id='modulo-ind' class='func-ind'>Mod</div>
+                            <div id='division-ind' class='func-ind'>Div</div>
+                            <div id='multiplication-ind' class='func-ind'>Mult</div>
+                            <div id='subtraction-ind' class='func-ind'>Subt</div>
+                            <div id='addition-ind' class='func-ind'>Add</div>
+                            <div id='clear-ind' class='func-ind'>Clear</div>
+
+                        </div>
+                        <div id='output'>0</div>
+                    </div>
+                    <div id='keypad'>
+                        <button id='clear' class='key utility' type='button'>Clear</button>
+                        <button id='sign' class='key utility' type='button'>-/+</button>
+                        <button id='modulo' class='key utility' type='button'>%</button>
+                        <button id='division' class='key operator' type='button'>/</button>
+
+                        <button id='seven' class='key value' type='button'>7</button>
+                        <button id='eight' class='key value' type='button'>8</button>
+                        <button id='nine' class='key value' type='button'>9</button>
+                        <button id='multiplication' class='key operator' type='button'>*</button>
+
+                        <button id='four' class='key value' type='button'>4</button>
+                        <button id='five' class='key value' type='button'>5</button>
+                        <button id='six' class='key value' type='button'>6</button>
+                        <button id='subtraction' class='key operator' type='button'>-</button>
+
+                        <button id='one' class='key value' type='button'>1</button>
+                        <button id='two' class='key value' type='button'>2</button>
+                        <button id='three' class='key value' type='button'>3</button>
+                        <button id='addition' class='key operator' type='button'>+</button>
+
+                        <button id='zero' class='key value' type='button'>0</button>
+                        <button id='decimal' class='key value' type='button'>.</button>
+                        <button id='calculate' class='key operator' type='button'>=</button>
+                    </div>
+                </div>
+            </main>
+
+    </body>
+
+    <scripts>
+        
+    </scripts>
+</html>

@@ -1,0 +1,173 @@
+:root {
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    font-family: 'font name', 'back up 1 font name', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+#background {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator-body {
+    width: auto;
+    max-width: 320px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#screen {
+    font-size: 3rem;
+    margin: 8px;
+    border-radius: 5px;
+    background-color: grey;
+    color: rgb(158, 158, 158);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#function-indicators-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 2px 5px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.func-ind {
+    font-size: 1rem;
+    padding: 0 7px;
+}
+
+#clear-ind {
+    color: black;
+}
+
+#output {
+    width: 100%;
+    height: auto;
+    display: inherit;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 10px;
+    font-family: 'Nova Mono', monospace;
+    font-size: 3rem;
+    color: black;
+}
+
+#output:before {
+    visibility: hidden;
+    content: '';
+}
+
+#output:before.active {
+    visibility: visible;
+}
+
+
+#keypad {
+    display: grid;
+    grid-template-areas: 'clear     sign    modulo      division'
+                         'seven     eight   nine        multiplication'
+                         'four      five    six         subtraction'
+                         'one       two     three       addition'
+                         'zero      zero    decimal     calculate';
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 75px);
+    grid-gap: 5px;
+    margin: 8px;
+}
+
+.key {
+    background-color: grey;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.operator{
+    background-color: orange;
+    color: black;
+}
+
+.utility{
+    background-color: lightgrey;
+    color: black;
+}
+
+#clear {
+    font-size: 1.5rem;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+
+
+
+
+
+
+    @media screen and (max-width: 1375px){
+        
+    }
+
+    @media screen and (max-width: 1200px){
+        
+    }
+
+    @media screen and (max-width: 1050px){
+        
+    }
+
+    @media screen and (max-width: 875px){
+        
+    }            
+
+    @media screen and (max-width: 750px){
+        
+    }
+
+    @media screen and (max-width: 600px){
+        
+    }
+
+    @media screen and (max-width: 500px){
+        
+    } 
+    
+    @media screen and (max-width: 400px){
+    
+    }
+
+    @media screen and (max-width: 350px){
+        
+    }
