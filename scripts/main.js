@@ -24,6 +24,14 @@ document.addEventListener('click', (e) => {
     // tain in multiple button clicks as array elements, thenn join to a string, then conver to an integer
 
     // create a `calculate()` function so that `input`, `operand` and `input2` are put into the calculuation
-    calculate(a, op, b);
 });
 
+button[class='value'].addEventListener('click', (e) => {
+    // input .innerHTML to an array and conver to a string, then convert to a number (`return +input1`)
+});button[class='operator'].addEventListener('click', (e) => {
+    // input .innerHTML to `const operand`
+});
+button[class='value'].addEventListener('click', (e) => {
+    // input .innerHTML to an array and conver to a string, then convert to a number (`return +input2`)
+});
+button[id='calculate'].addEventListener('click', calculate(input1, operand, input2));
