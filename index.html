@@ -36,6 +36,7 @@
                 <div id='calculator-body'>
                     <div id='screen'>
                         <div id='function-indicators-bar'>
+                            <div id='result-ind' class='func-ind'>Result</div>
                             <div id='modulo-ind' class='func-ind'>Mod</div>
                             <div id='division-ind' class='func-ind'>Div</div>
                             <div id='multiplication-ind' class='func-ind'>Mult</div>
@@ -44,12 +45,12 @@
                             <div id='clear-ind' class='func-ind'>Clear</div>
 
                         </div>
-                        <div id='output'>0</div>
+                        <div id='output'>0</div>    <!-- 10 character max-->
                     </div>
                     <div id='keypad'>
                         <button id='clear' class='key utility' type='button'>Clear</button>
-                        <button id='sign' class='key utility' type='button'>-/+</button>
-                        <button id='modulo' class='key utility' type='button'>%</button>
+                        <!-- <button id='sign' class='key utility' type='button'>-/+</button> -->
+                        <button id='modulo' class='key operator' type='button'>%</button>
                         <button id='division' class='key operator' type='button'>/</button>
 
                         <button id='seven' class='key value' type='button'>7</button>
@@ -69,7 +70,7 @@
 
                         <button id='zero' class='key value' type='button'>0</button>
                         <button id='decimal' class='key value' type='button'>.</button>
-                        <button id='calculate' class='key operator' type='button'>=</button>
+                        <button id='calculate' class='key calculate' type='button'>=</button>
                     </div>
                 </div>
             </main>

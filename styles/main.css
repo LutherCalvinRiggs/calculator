@@ -57,17 +57,17 @@ body {
 }
 
 .func-ind {
-    font-size: 1rem;
-    padding: 0 7px;
+    font-size: 0.8rem;
+    padding: 0 5px;
 }
 
-#clear-ind {
+/* #clear-ind {
     color: black;
-}
+} */
 
 #output {
     width: 100%;
-    height: auto;
+    height: 75px;
     display: inherit;
     justify-content: flex-end;
     align-items: flex-end;
@@ -89,7 +89,7 @@ body {
 
 #keypad {
     display: grid;
-    grid-template-areas: 'clear     sign    modulo      division'
+    grid-template-areas: 'clear     clear    modulo      division'
                          'seven     eight   nine        multiplication'
                          'four      five    six         subtraction'
                          'one       two     three       addition'
@@ -112,7 +112,7 @@ body {
     font-size: 2rem;
 }
 
-.operator{
+.operator, .calculate{
     background-color: orange;
     color: black;
 }
@@ -124,6 +124,7 @@ body {
 
 #clear {
     font-size: 1.5rem;
+    grid-area: clear;
 }
 
 #zero {
