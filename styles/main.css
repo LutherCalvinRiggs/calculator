@@ -89,7 +89,7 @@ body {
 
 #keypad {
     display: grid;
-    grid-template-areas: 'clear     clear    modulo      division'
+    grid-template-areas: 'clear     backspace    modulo      division'
                          'seven     eight   nine        multiplication'
                          'four      five    six         subtraction'
                          'one       two     three       addition'
@@ -125,6 +125,12 @@ body {
 #clear {
     font-size: 1.5rem;
     grid-area: clear;
+}
+
+#backspace {
+    grid-area: backspace;
+    background-color: lightgrey;
+    color: black;
 }
 
 #zero {
